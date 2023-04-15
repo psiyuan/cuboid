@@ -1,0 +1,225 @@
+/*!
+* direction.less v0.1.0
+*
+* Copyright 2013 Moshe Simantov
+* Licensed under the MIT license
+* 
+* Keep tracking: https://github.com/DevelopmentIL/direction.less
+*/
+/**
+* Definitions for GeoGebra
+* ========================
+* Autor: Steffi
+* Version: 1.0
+*/
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea,
+img {
+  max-width: 100%;
+}
+.left,
+.right {
+  text-align: center;
+}
+.floatRight,
+.floatLeft {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+}
+h1,
+h2,
+h3 {
+  margin: 0.5em 0 0.4em 0;
+}
+h1.huge {
+  font-size: 2em;
+}
+button,
+a.button,
+label.button,
+input[type="button"],
+input[type="submit"] {
+  padding: 0.2em 1em 0.1em 1em;
+}
+button img,
+a.button img,
+label.button img,
+input[type="button"] img,
+input[type="submit"] img {
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+}
+a.button,
+label.button {
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+a.button.small,
+label.button.small {
+  padding-top: 0.4em;
+  padding-bottom: 0.3em;
+}
+/*.small {
+  font-size: 0.9em;
+}*/
+.ggbBanner.lightPetrolium .huge {
+  font-size: 2.3em;
+}
+.ggbBanner .ggbBannerContent {
+  padding: 10px;
+}
+.ggbBanner .ggbBannerContent .box.left,
+.ggbBanner .ggbBannerContent .box.right {
+  text-align: center;
+}
+.ggbBanner .ggbBannerContent .box.left img,
+.ggbBanner .ggbBannerContent .box.right img {
+  float: none;
+  margin: 0px auto;
+  display: block;
+  max-height: 230px;
+  width: auto;
+}
+.ggbBanner .ggbBannerContent .box p {
+  text-align: center;
+}
+.ggbBanner .ggbBannerContent {
+  font-size: 1.1em;
+}
+.ggbBanner .ggbBannerContent .big img {
+  height: 50px;
+  width: 50px;
+}
+#ggbHeader {
+  min-height: 40px;
+  padding: 0 10px;
+}
+#ggbHeader.fixed #ggbHeaderContent {
+  padding: 0 10px;
+}
+#ggbHeader.fixed #ggbHeaderContent #ggbLogo {
+  width: auto;
+}
+#ggbHeader.fixed #ggbHeaderContent #ggbLogo a {
+  margin-top: 2px;
+  width: 21px;
+  height: 21px;
+  background-image: url("../img/GeoGebra-logo-phone.png");
+  background-image: -webkit-image-set(url("../img/GeoGebra-logo-phone.png") 1x, url("../img/GeoGebra-logo-phone@2x.png") 2x);
+}
+#ggbHeader #ggbLogo {
+  display: block;
+  width: 150px;
+}
+#ggbHeader #ggbShowMenuBtn {
+  top: 10px;
+}
+#ggbHeader #ggbNavigation {
+  display: none;
+}
+#ggbHeader #ggbNavigation #ggbMainMenu li {
+  text-align: center;
+  padding: 5px 0px;
+}
+#ggbHeader #ggbNavigation #ggbLoginContainer {
+  text-align: center;
+}
+#ggbHeader #ggbNavigation #ggbLoginContainer #ggbUserPopup .submenu-arrow {
+  right: 50%;
+  margin-right: -21px;
+}
+#ggbHeader #ggbNavigation #ggbLoginContainer #ggbUserPopup .submenu-content {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+#ggbHeader #ggbNavigation #ggbLoginContainer #ggbUserPopup .submenu-content li {
+  text-align: center;
+}
+#ggbSubHeader {
+  padding: 0 10px;
+}
+.ggbPageContent {
+  padding: 10px;
+}
+.ggbPageContent .imageButtonContainer.resize.regular .imageButton img {
+  width: 200px;
+}
+.ggbPageContent .imageButtonContainer.resize.smaller .imageButton img {
+  height: 100px;
+}
+.ggbPageContent .imageButtonContainer.slide {
+  text-align: center;
+}
+.ggbPageContent .imageButtonContainer.slide.small .imageButton {
+  width: 80px;
+  height: 80px;
+}
+.ggbPageContent .imageButtonContainer.slide.small .imageButton .image {
+  width: 80px;
+  height: 80px;
+}
+.ggbPageContent .imageButtonContainer.slide.small .imageButton .text {
+  width: 80px;
+  height: 0px;
+}
+.ggbPageContent .imageButtonContainer.slide.small .imageButton .text.opentext {
+  height: 80px;
+}
+.ggbPageContent .imageButtonContainer.slide.small .imageButton.heading .text,
+.ggbPageContent .imageButtonContainer.slide.small .imageButton.more .text,
+.ggbPageContent .imageButtonContainer.slide.small .imageButton:hover .text,
+.ggbPageContent .imageButtonContainer.slide.small .imageButton:focus .text {
+  height: 80px;
+}
+.ggbPageContent .imageButtonContainer.slide a.imageButton:focus .text,
+.ggbPageContent .imageButtonContainer.slide div.imageButton.showHoverEffect:focus .text,
+.ggbPageContent .imageButtonContainer.slide a.imageButton:hover .text,
+.ggbPageContent .imageButtonContainer.slide div.imageButton.showHoverEffect:hover .text {
+  height: 80px;
+}
+.ggbSubmenuPopup {
+  left: -5px;
+}
+#ggbFooter {
+  padding: 0px 10px;
+}
+#ggbFooterMenu {
+  text-align: right;
+}
+#ggbFooterMenu li {
+  padding: 0.3em 0;
+}
+#ggbFooterMenu li ul {
+  margin-top: 0.3em;
+}
+#ggbFooterMenu > li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-bottom: 10px;
+}
+#ggbFooterBottomContent ul li {
+  padding: 0.2em 0 0.5em 0;
+}
+#ggbFooterOptions {
+  text-align: center;
+}
+#ggbFooterOptions #ggbFollowUs {
+  margin-top: 10px;
+  text-align: center;
+}
